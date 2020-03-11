@@ -56,6 +56,13 @@ p{  font-size: 0.9rem;
     font-family: poppins;
    
 }
+.mobileNav{
+    display:none;
+}
+.semi{
+    font-weight: 600;
+}
+/*-------------------------section1----------*/
 .row{
     display:none;
 }
@@ -72,8 +79,11 @@ ul{
     list-style: none;
     
 }
-.semi{
-    font-weight: 600;
+
+
+.logo{
+    align-items: center;   
+    display:flex;
 }
 .flex{
     /*flex: 1 1 auto;*/
@@ -104,13 +114,6 @@ ul{
    width:80em;
 }
 
-.logo{
-    align-items: center;   
-    display:flex;
-}
-
-    
-
 input{
     border-radius:10px;
     height:30px;
@@ -127,7 +130,7 @@ input{
         display: none;
 }
 
-button {
+.lupe {
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/980px-Magnifying_glass_icon.svg.png");
 	background-size: contain;
 	bottom: 5px;
@@ -340,6 +343,7 @@ button {
     height: 5em;
     text-align: center;
 }
+/*------------------------section5---------------*/
 .sec5{
     display:flex;
    
@@ -357,10 +361,8 @@ button {
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-   
-
 }
-/*--------------------------- This is section 5---------------------------------*/
+
 .colum__left__sec5{
     display:flex;
     flex-direction: column;
@@ -421,11 +423,6 @@ button {
     align-self: center;
 }
    
-
-
-
-
-
 .main__cont{
     display:flex;
     flex-wrap: wrap;
@@ -470,7 +467,6 @@ input{
     border-radius: 0;
 }
 
-    
 .Name__flex{
     display:flex;
     flex-direction: column;
@@ -531,9 +527,9 @@ input{
 }
 .img__sec6righta{
     
-        position: relative;
-        left: 338px;
-        bottom: 275px;
+    position: relative;
+    left: 338px;
+    bottom: 275px;
 }
 .footer{
     display:flex;
@@ -569,9 +565,6 @@ input{
     align-content: space-between;
     justify-content: space-between;
     margin-top: 10em;
-    
-
-
 }
 .follow__images{
     margin-top: 1em;
@@ -656,6 +649,9 @@ input{
         list-style: none;
         
     }
+    .mobileNav{
+        display:none;
+    }
     .semi{
         font-weight: 600;
     }
@@ -676,6 +672,8 @@ input{
         margin:auto;
        
     }
+    
+    
     
     .main__cont__md{
         display: flex;
@@ -710,7 +708,7 @@ input{
         width: 50%;
         margin-left: 35px;
     }
-    
+    /*-----------------------------section3--mobile-----------------------------*/
     .sec3{
         margin-top: 5em;
         display: flex;
@@ -733,8 +731,7 @@ input{
         height: 10rem;
         align-items: center;
     }
-
-    
+    /*----------------------------------------------section4--mobile---------------------------------*/
     .card__flex {
         display: flex;
         justify-content: space-around;
@@ -771,16 +768,16 @@ input{
     }
     .sec4__row{
         
-            /* display: flex; */
-            flex-direction: column;
-            width: 0rem;
-            /* height: 20rem; */
-            /* display: flex; */
-            /* flex-direction: row; */
-            /* justify-content: space-around; */
-            margin-bottom: 350px;
-            margin-top: 450px;
-            align-items: center;
+        /* display: flex; */
+        flex-direction: column;
+        width: 0rem;
+        /* height: 20rem; */
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* justify-content: space-around; */
+        margin-bottom: 350px;
+        margin-top: 450px;
+        align-items: center;
     }
     .sec__4b {
         display: flex;
@@ -789,7 +786,7 @@ input{
         justify-content: space-between;
      
     }
-
+        /*--------------------------------section5---mobile----------------------------*/
     .colum__left__sec5{
         display:none;
         
@@ -869,12 +866,44 @@ input{
         font-family: poppins;
         font-weight: 400;
     }
+    .mobileNav{
+        
+        align-items: center;
+        background-color: #fff;
+        display:flex;
+        flex-direction: column;
+        height: 180px;
+        justify-content: center;
+        right:100%;
+        position:fixed;
+        top:0;
+        transition: right 0.9s ease-in;
+        width:100%;
+    }
+    .mobileNav.visible{
+        right: 0;
+        top:50px;
+        z-index: 10;
+       background-color: green;
+    }
+    .mobileNav > nav > li{
+        margin-bottom: 30px ;
+    }
+    .mobilenav > nav > li > a{
+        color:green;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
     input {
-        border-radius: 10px;
+        border-radius: 0px;
         height: 30px;
         padding-right: 50px;
         border-color: #a174db;
         margin-top: 10px;
+    }
+    /*--------------------menutryout-----------------*/
+    .menu-button{
+        color:red;
     }
     .flex {
         display: flex;

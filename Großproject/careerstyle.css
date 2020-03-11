@@ -1,0 +1,154 @@
+/*------------------Page setup--------------------*/
+html{
+    box-sizing: border-box;
+}
+body{
+    max-width: 80em;
+    margin:0 auto;
+    font-family: poppins;
+    
+   
+}
+h1{
+    font-size: 2.875rem;
+    font-family: poppins;
+    font-weight: 400;
+}
+h2{ font-size: 2.25rem;
+    font-family: poppins;
+    font-weight: 400;
+}
+h3{ font-size: 1.5rem;
+    font-family: poppins;
+    font-weight: 400;
+}
+h4{ font-size:1.125rem;
+    font-family: poppins;
+    font-weight:400;
+}
+h5{ font-size: 1rem;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.0rem;
+    color:black;
+    padding: 0.5rem;
+}
+p{  font-size: 0.9rem;
+color:#777777 ;
+font-family: poppins;
+}
+.semi{
+    font-weight: 600;
+}
+/* ------------------------------------------Header and Nav---------------------------------*/
+
+ul{
+    list-style: none;
+    
+}
+.mobileNav{
+    display:none;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9em;
+   
+}
+.flex__ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.25rem;
+    width: 35.625rem;
+   }
+
+.mobileNav{
+    display:none;
+}
+.row{
+        display:none;
+    }
+input#hamburg {display:none
+    }
+
+label.hamburg { 
+        display: block;
+        background: #555; width: 75px; height: 50px; 
+        position: relative; 
+        margin-left: auto; margin-right: auto;
+        border-radius: 4px; 
+     }
+input{
+        border-radius:0.3rem;
+        height:3rem;
+        padding-right:6.2rem;
+        border-color: #ceb2f3;
+    }
+#input-group{
+        display:inline;
+        position:relative;
+        color:#bfa8dd;
+        border-radius:10px !important;
+    }
+/*-----------------------------Button/Style---------------------------------------*/
+
+.hidden{
+    display: none;
+}
+a:hover{
+    color:#a174db;}
+
+button {
+background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/980px-Magnifying_glass_icon.svg.png");
+background-size: contain;
+bottom: 5px;
+border: none;
+height: 20px;
+position: relative;
+right: 27px;
+width: 20px;
+}
+
+.button2{
+display: flex;
+justify-content: center;
+flex:2;
+}
+.ContactButton {
+box-shadow: 0px 1px 0px 0px #a174db;
+background:linear-gradient(to bottom, #a174db 5%, #9360d6 100%);
+background-color:#a174db;
+border-radius:6px;
+border:1px solid #252525;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:regular;
+font-size:1.125rem;
+font-weight:bold;
+padding:1.0rem 2.5rem;
+/*margin:1.5rem 1.5rem 1.5rem 0rem;*/
+text-decoration:none;
+text-shadow:0px -1px 0px #d9dbd8;
+}
+.ContactButton:hover {
+background:linear-gradient(to bottom, #61349b 5%, #2c1747 100%);
+background-color:#61349b;
+}
+.ContactButton:active {
+position:relative;
+top:1px;
+}
+     

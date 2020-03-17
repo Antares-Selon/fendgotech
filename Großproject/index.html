@@ -179,6 +179,7 @@
             <img class="selected2a" src="images/jurica-koletic-7yvzyzeitc8-unsplash.jpg" alt="##">
             <img class="selected3a" src="images/parker-whitson-bbhdqri4l08-unsplash.jpg" alt="##">
             </div>
+              </div>
         </section>
                 <div class="heading__sec6">
                         <h1>Facing Problems?</h1>
@@ -189,25 +190,25 @@
                 <div class="first_row_contact">
                         <div class="Name__flex">
                         <label  for="first-name">First name</label>
-                        <input class="First-Name  cssdesign" type="text" placeholder="Your First Name" id="first-name">
+                        <input class="First-Name  cssdesign" type="text" placeholder="Your First Name" id="firstName">
                         </div>
                         <div class="Name_flex2">
-                        <label  for="first-name">Last name</label>
+                        <label  for="last-name">Last name</label>
                         <input class="First-Name  cssdesign" type="text" placeholder="Your last Name" id="name">
                         </div>
                 </div>
                         <label class="email__css" for="email">Your e-mail adress</label>
-                        <input class="cssdesign" type="text" placeholder="Please enter your Email" id="email">
+                        <input class="cssdesign" type="email" placeholder="Please enter your Email" id="email" minlength="8" value="" onsubmit="requierd()">
+                        <span class="error" aria-live="polite"></span>
                 <div class="pro_msg">
-                        <label for="problems">Wich related Problem are you Facing</label>
-                            <select id="problem">
+                        <label for="problem">Wich related Problem are you Facing</label>
+                            <select id="problem1">
                             <option value="Problem 1"></option>
                             <option value="Problem 2"></option>
                             </select>
                 </div>
-                        <input class="cssdesign" type="text" placeholder="Your Problem will be terminated" id="problem">
-                </div>
-                        <label  for="Message">Type your Message</label>
+                        <input class="cssdesign" type="text" placeholder="Your Problem will be terminated" id="problem">               
+                        <label  for="message">Type your Message</label>
                         <input class="cssdesign message" type="text" placeholder="Your message here" id="message"> 
                         <button id="form-submit-button" type="submit">submit</button>
                 <div class="button2__sec6 ">  
@@ -247,7 +248,7 @@
             <p>Vimeo</p>
             <p>Skype</p>
         </div>
-        <div>
+        
         <div class="adress">
             <h4>Adress</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi?</p>
@@ -269,5 +270,6 @@
         <img src="images/group28.jpg" alt="stuhl">
     </div>
 </body>
+<body>
 <script src="gotech.js"></script>
 </html>

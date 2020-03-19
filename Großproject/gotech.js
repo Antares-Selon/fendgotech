@@ -1,4 +1,4 @@
-/*"use strict";*/
+"use strict";
 const mobileNav = document.querySelector(".mobileNav");
 const menuButton = document.querySelector(".menu-button");
 const closeButton = document.querySelector(".close-button");

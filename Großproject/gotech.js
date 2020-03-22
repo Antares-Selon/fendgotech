@@ -33,7 +33,7 @@ email.addEventListener("input", function() {
 });
 
 form.addEventListener("submit", function(event) {
-  if (!email.validity.valid) {
+  if (email.validity.valid) {
     showError();
 
     event.preventDefault();
@@ -65,10 +65,11 @@ function submitForm(event) {
   );
 }
 
-/*submitButton.addEventListener("click", submitForm);*/
+submitButton.addEventListener("click", submitForm);
 
-submitButton.addEventListener("click", () => {
-  if (
+submitButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  /*if (
     name.value.length > 0 &&
     firstName.value.length > 0 &&
     email.value.length > 3 &&
@@ -81,5 +82,5 @@ submitButton.addEventListener("click", () => {
     alert(
       "Please make sure that you filled in all the required fields. Thank you!"
     );
-  }
+  }*/
 });

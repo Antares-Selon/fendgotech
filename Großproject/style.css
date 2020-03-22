@@ -756,6 +756,7 @@ input {
     text-align: center;
     padding: 0.938rem;
     box-shadow: 1px 0px 1px 0px #cccccc;
+    margin-bottom: 1.5rem;
   }
   .button__left {
     padding: 1.563rem;

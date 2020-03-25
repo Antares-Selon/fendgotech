@@ -22,6 +22,11 @@ menuButton.onclick = menuButtonClickhandler;
 const form = document.getElementsByTagName("form")[0];
 const email = document.getElementById("email");
 const emailError = document.querySelector("#email + span.error");
+const submitButton = document.getElementById("form-submit-button");
+const emailInput = document.getElementById("email");
+const nameInput = document.getElementById("name");
+const firstName = document.getElementById("firstName");
+const messageInput = document.getElementById("message");
 
 email.addEventListener("input", function() {
   if (email.validity.valid) {
@@ -32,14 +37,23 @@ email.addEventListener("input", function() {
   }
 });
 
-form.addEventListener("submit", function(event) {
+function submitForm(event) {
+  event.preventDefault();
   if (email.validity.valid) {
-    showError();
-
-    event.preventDefault();
+    alert(
+      `Name: ${nameInput.value},Last Name ${firstName.value}, Email: ${emailInput.value}, Message: ${messageInput.value},`
+    );
   }
-});
+}
 
+submitButton.addEventListener("click", submitForm);
+/*submitButton.onclick(
+  "click",
+  function(event) {
+    event.preventDefault();
+    console.log(sevent);
+  }*/
+/*-------------wird auch vom Browser übernommen wenn in Html hinterlegt*/
 function showError() {
   if (email.validity.valueMissing) {
     emailError.textContent = "You need to enter an e-mail address.";
@@ -51,36 +65,3 @@ function showError() {
 
   emailError.className = "error active";
 }
-
-const emailInput = document.getElementById("email");
-const nameInput = document.getElementById("name");
-const firstName = document.getElementById("firstName");
-const messageInput = document.getElementById("message");
-const submitButton = document.getElementById("form-submit-button");
-
-function submitForm(event) {
-  event.preventDefault();
-  alert(
-    `Name: ${nameInput.value},Last Name ${firstName.value}, Email: ${emailInput.value}, Message: ${messageInput.value},`
-  );
-}
-
-submitButton.addEventListener("click", submitForm);
-
-submitButton.addEventListener("click", function(event) {
-  event.preventDefault();
-  /*if (
-    name.value.length > 0 &&
-    firstName.value.length > 0 &&
-    email.value.length > 3 &&
-    email.value.includes("@") &&
-    message.value.length > 0
-  ) {
-    openModal(event);
-  } else {
-    customerInputs.forEach(btn => btn.classList.add("error"));
-    alert(
-      "Please make sure that you filled in all the required fields. Thank you!"
-    );
-  }*/
-});

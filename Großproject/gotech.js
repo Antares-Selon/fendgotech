@@ -65,3 +65,14 @@ function showError() {
 
   emailError.className = "error active";
 }
+const arrowLeft = document.querySelector(".button__left");
+const arrowright = document.querySelector(".button__right");
+
+arrowLeft.addEventListener("click", function() {
+  slideshowWrapper.style.animation = "slideshow1 15s infinite";
+});
+const arrowRight = document.querySelector(".button__right");
+
+arrowRight.addEventListener("click", function() {
+  slideshowWrapper.style.animation = "slideshow2 15s infinite";
+});

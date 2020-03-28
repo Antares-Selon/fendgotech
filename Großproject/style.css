@@ -278,12 +278,12 @@ input {
 
 /*slider*/
 
-.slideshow-wrapper {
+#slideshowWrapper {
   display: flex;
   width: 100%;
   height: 100%;
   position: relative;
-  animation: slideshow 30s infinite;
+  /*animation: slideshow 25s infinite;*/
 }
 .slide {
   width: 25%;
@@ -308,6 +308,30 @@ input {
     left: 0%;
   }
 }
+@keyframes slideshow1 {
+  0% {
+    left: 33%;
+  }
+
+  25% {
+    left: 33%;
+  }
+  60% {
+    left: 0;
+  }
+}
+@keyframes slideshow2 {
+  0% {
+    left: -33%;
+  }
+
+  25% {
+    left: -33%;
+  }
+  60% {
+    left: 0;
+  }
+}
 
 .button__left {
   padding: 1.563rem;
@@ -325,10 +349,10 @@ input {
   outline: none;
   background-color: #fff;
 }
-.slide-btn-1:focus .slideshow-wrapper {
-  animation: none;
+.slide-btn-1:focus ~ .slideshow-wrapper {
+  animation: step-end;
 }
-.slide-btn-2:focus .slideshow-wrapper {
+.slide-btn-2:focus ~ .slideshow-wrapper {
   animation: none;
 }
 
